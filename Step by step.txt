@@ -1,0 +1,22 @@
+Դիտել եմ վիդեոներ և կարդացել եմ հոդվածներ այն մասին, թե ինչպես ստեղծել JS Web Server:
+Համակարգչիս մեջ ներբեռնել եմ  node.js և Visual Studio Code, քանի որ web server ստեղծելու համար ծրագրերը անհրաժեշտ էին։
+Դիտել եմ վիդեոներ Visual Studio Code ծրագրի մասին։ 
+Visual Studio Code ծրագրում New File հրամանով ստեղծել եմ helloworld.js folder-ը։ 
+Մի քանի անգամ ձախողելուց հետո, վերջապես սա գրեցի helloworld.js-ի մեջ՝
+const http = require('http')
+2.	const port = 8080
+3.	
+4.	const server = http.createServer((request, response) =>{
+5.	response.end('Hello,World!')
+6.	}) 
+7.	
+8.	server.listen(port, () => {
+9.	console.log('Server listening on: http://localhost:%s', port)
+10.	})
+Այնուհետև սեղմել եմ  TERMINAL և ստորին հատվածում գրել node helloworl.js` PS C:\Users\User\First program> node helloworld.js:  
+Սեղմեցի Enter և ծրագիրը տվեց հետևյալ հղումը, Server listening on: http://localhost:8080
+Browser-ի մեջ տեղադրեցի և հրաշք․ բացվեց Hello, World! պատուհանը։ 
+Github.com կայքում բացել եմ անձնական էջ և երկու ֆայլերը ներբեռնել, ուսումնասիրելուց հետո հասկացա, որ կարող եմ ներբեռնել երկու եղանակով։
+Առաջինը՝ New repository, uploading files ուղղակի վերբեռնեցի ֆայլերը և ինչպես հասկացա սա կարելի է կիրառել քիչ ֆայլերի համար։
+Երկրորդը՝ համակարգչիս մեջ ներբեռնեցի Git, և git init, git status, git git add ., git commit -m 'project first commit, 
+ git remote add origin http:...,git branch -m master, git push -u origin master հրամանների հաջորդական կիրառմամբ ներբեռնեցի ֆայլերը։ 
