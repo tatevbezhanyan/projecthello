@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+   <title>How to compare two input fields in javascript</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<script>// Compare two input fields in js
+function compare_input(){
+  var f_input=document.getElementById('first_input').value;
+  var s_input=document.getElementById('second_input').value;
+  if(f_input===s_input){
+     alert('same as first');
+     } else{
+     alert (false);
+     }
+    }
+</script>
+<body>
+   <div class="container">
+      <div class="col-sm-5">
+         <p><input type="text" id="first_input" class="form-control" placeholder="Write First Text" /></p>
+         <p><input type="text" id="second_input" onkeyup="compare_input();" class="form-control" placeholder="Write Second Text" /></p>
+         <p><input type="submit" value = "Click me!"></p>
+      </div>
+   </div>
+</body>
+</html>
